@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assests/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_box">
+
+        <!-- Nav bar -->
+
+        <div class="nav_bar">
+
+            <div class="home">
+                <img src="./assests/home_logo.png" alt="spotify_logo">
+            </div>
+            
+            <div class="logincontent">
+                <button class="premium">Explore Premium</button>
+                <button id="install"><i class="fa-regular fa-circle-down" style="font-weight: 400; font-size: 15px;"></i>&nbsp; Install App</button>
+                <i class="fa-regular fa-bell bell"></i>
+                <i class="fa-solid fa-user-group bell"></i>
+                <button id="user"><img src="./assests/usericon.png" alt="usericon" id="userimg"></button>
+            </div>
+        </div>
+
+        <div class="nav_bar_upper">
+           <div class="search">
+                <div id="home_icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div id="search_box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search_text_box" placeholder="What do you want to play?">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Side Bar -->
+
+        <div class="sidebar">
+            <div class="head">
+                <input type="checkbox" id="check">
+                <div id="lib">
+                    <label for="check" id="lib_label">
+                        <img src="./assests/lib_icon.png" id="lib_side_img" alt="lib_icon">
+                        <h3>Your Library</h3>
+                    </label>
+                </div>
+                <div id="create_btn">
+                    <button id="create_button"><i class="fa-solid fa-plus"></i> Create</button>
+                </div>
+            </div>
+
+            <div class="createplaylist">
+                <div class="playlist">
+                    <div class="para">
+                        <p class="para1">Create your first playlist </p>
+                        <p class="para2">it's easy, we'll help you</p>
+                    </div>
+                    <button class="premium create_play">Create playlist</button>
+                </div>
+                <div class="playlist playlist2">
+                    <div class="para">
+                        <p class="para1"> Let's find some podast to follow</p>
+                        <p class="para2">We'll keep you update on new episodes</p>
+                    </div>
+                    <button class="premium create_play" id="podcast">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- main Content -->
+
+        <div class="main_content">
+            <div class="header">
+                <button id="all" class="head_btn">All</button>
+                <button id="music" class="head_btn">Music</button>
+                <button id="podbtn" class="head_btn">Podcast</button>
+            </div>
+            
+            <div class="card_container">
+                <div class="card_header">
+                    <h2>Recommended for you</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_1.jpg" alt="best bollywood mush">
+                            <p>Editor's pick for the best love tracks from...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_2.jpg" alt="best bollywood mush">
+                            <p>The most streamed artists of 2025 in...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_3.jpg" alt="best bollywood mush">
+                            <p>The most streamed songs of 2025 in India...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_4.jpg" alt="best bollywood mush">
+                            <p>The most streamed Haryanvi artists in 202...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_5.jpg" alt="best bollywood mush">
+                            <p>The most streamed artists of 2025 in...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_6.jpg" alt="best bollywood mush">
+                            <p>The most streamed artists of 2025 in Tamil...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_7.jpg" alt="best bollywood mush">
+                            <p>The most streamed artists of 2025 in...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_8.jpg" alt="best bollywood mush">
+                            <p>The most streamed artists of 2025 in India...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_9.jpg" alt="best bollywood mush">
+                            <p>Editor's pick the best tracks from I-Pop artis...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/recommended for you/rec_card_10.jpg" alt="best bollywood mush">
+                            <p>Editors pick the best songs from RADAR...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="card_header">
+                    <h2>Editor's Pick</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_1.jpg" alt="best bollywood mush">
+                            <p>Bollywood songs that ruled hearts in the Y2K...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_2.jpg" alt="best bollywood mush">
+                            <p>Late night cool,& these soothing tunes.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_3.jpg" alt="best bollywood mush">
+                            <p>India's ultimate love playlist ❤️ Cover-...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_4.jpg" alt="best bollywood mush">
+                            <p>Sit back,and chill with Bollywood's easygoin...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_5.jpg" alt="best bollywood mush">
+                            <p>Reliev the biggest tracks of the decade...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_6.jpg" alt="best bollywood mush">
+                            <p>Bollywood Central, jab baje tho seedha dil ke...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_7.jpg" alt="best bollywood mush">
+                            <p>Soulful tunes for the heart that has loved a...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_8.jpg" alt="best bollywood mush">
+                            <p>Get ready because you're the main</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_9.jpg" alt="best bollywood mush">
+                            <p>Bollywood's mesmerising ode to th...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/editor pick/edi_card_10.jpg" alt="best bollywood mush">
+                            <p>It's ok to not be okay. Nostalgic songs that...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="card_header">
+                    <h2>Charts</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_1.jpg" alt="best bollywood mush">
+                            <p>Catch the hottest Punjabi tracks. Cover:...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_2.jpg" alt="best bollywood mush">
+                            <p>Hottest Hindi music that India is listening to...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_3.jpg" alt="best bollywood mush">
+                            <p>Tune into the Hottest tracks of Kollywood!...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_4.jpg" alt="best bollywood mush">
+                            <p>New Music from Telgu! Cover: mana Shankara...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_5.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most played tracks...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_6.jpg" alt="best bollywood mush">
+                            <p>Tune in to the Hottest Tracks of Tollywood!...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_7.jpg" alt="best bollywood mush">
+                            <p>New music fron Gurnam Bhullar,...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_8.jpg" alt="best bollywood mush">
+                            <p>New Music fron Kollywood. Cover:...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_9.jpg" alt="best bollywood mush">
+                            <p>The hottest tracks in India: CoverL tyla</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_10.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most played tracks...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container last_container">
+                <div class="card_header">
+                    <h2>Featured Charts</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_5.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most played tracks...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/featured charts/fea_card_2.jpg" alt="best bollywood mush">
+                            <p>Your weekly update of the most played track...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/featured charts/fea_card_3.jpg" alt="best bollywood mush">
+                            <p>Your weekly update of the most played tracks...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/featured charts/fea_card_4.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most viral tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/featured charts/fea_card_5.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most viral tracks right...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img_box">
+                            <img src="./assests/charts/cha_card_10.jpg" alt="best bollywood mush">
+                            <p>Your daily update of the most played tracks...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="footer">
+                <div class="all_link_container">
+                    <div class="links">
+                        <h2>Company</h2>
+                        <a href="#" class="all_anchor">About</a>
+                        <a href="#" class="all_anchor">Jobs</a>
+                        <a href="#" class="all_anchor">For the Record</a>
+                    </div>
+                    <div class="links">
+                        <h2>Communities</h2>
+                        <a href="#" class="all_anchor">For Artists</a>
+                        <a href="#" class="all_anchor">Developers</a>
+                        <a href="#" class="all_anchor">Advertising</a>
+                        <a href="#" class="all_anchor">Investors</a>
+                        <a href="#" class="all_anchor">Vendors</a>
+                    </div>
+                    <div class="links link3">
+                        <h2>Useful links</h2>
+                        <a href="#" class="all_anchor">Support</a>
+                        <a href="#" class="all_anchor">Free Mobile App</a>
+                        <a href="#" class="all_anchor">Popular by Country</a>
+                        <a href="#" class="all_anchor">Import your music</a>
+                    </div>
+                    <div class="links link4">
+                        <h2>Spotify Plans</h2>
+                        <a href="#" class="all_anchor">Premium Lite</a>
+                        <a href="#" class="all_anchor">Premium Standard</a>
+                        <a href="#" class="all_anchor">Premium Platinum</a>
+                        <a href="#" class="all_anchor">Premium Student</a>
+                        <a href="#" class="all_anchor">Spotify Free</a>
+                    </div>
+                    <div class="social_media">
+                        <a href="#" class="social_links"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social_links"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social_links"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <hr class="hr hr1">
+                <div class="last_footer">
+                    <div class="legal_rights">
+                        <a href="#" class="legal_link">Legal</a>
+                        <a href="#" class="legal_link">Safety & Privacy Center</a>
+                        <a href="#" class="legal_link">Privacy Policy</a>
+                        <a href="#" class="legal_link">Cookies</a>
+                        <a href="#" class="legal_link">About Ads</a>
+                        <a href="#" class="legal_link">Accessibility</a>
+                    </div>
+                    <h2><i class="fa-regular fa-copyright"></i> 2025 Spotify AB</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player -->
+
+        <div class="player">
+            <div class="curr_play">
+                <img src="./assests/Sahiba.jpg" alt="Sahiba" id="song_cover">
+                <div class="song_name">
+                    <h2 id="song_name">Sahiba</h2>
+                    <h2 id="singer_name">Aditya Rikhari</h2>
+                </div>
+                <i class="fa-solid fa-circle-plus plus_icon"></i>
+            </div>
+            <div class="music_control">
+                <div class="play_pause">
+                    <i class="pl_pau_btn fa-solid fa-shuffle"></i>
+                    <i class="pl_pau_btn fa-solid fa-backward-step"></i>
+                    <div id="play" class="pl_pau_btn">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <i class="pl_pau_btn fa-solid fa-forward-step"></i>
+                    <i class="pl_pau_btn fa-solid fa-repeat"></i>
+                </div>
+                <div class="music_range">
+                    <span class="time">0:34</span>
+                    <input type="range" step="1" min="0" max="100" class="range">
+                    <span class="time">3:10</span>
+                </div>
+            </div>
+            <div class="extra_control">
+                <i class="ex_con_btn fa-solid fa-microphone-lines"></i>
+                <i class="ex_con_btn fa-solid fa-bars"></i>
+                <i class="ex_con_btn fa-solid fa-podcast"></i>
+                <i class="ex_con_btn fa-solid fa-volume-low"></i>
+                <input type="range" step="1" min="0" max="15" class="volume">
+                <i class="ex_con_btn fa-solid fa-arrow-up-right-from-square"></i>
+                <i class="ex_con_btn fa-solid fa-expand"></i>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
